@@ -1,0 +1,42 @@
+@import "./style.css";
+
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+  min-width: 400px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: var(--secondary-color);
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .card-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,13 @@
+@import "./style.css";
+
+footer {
+  background-color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  color: var(--secondary-color);
+  width: 100%;
+  bottom: 0;
+}

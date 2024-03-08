@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Desafio 2</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="" />
+    </header>
+
+    <div class="container">
+      <div class="title">
+        <h1><strong>2</strong> motoboys cadastrados</h1>
+        <p>Veja a lista abaixo</p>
+      </div>
+
+      <div class="cards">
+        <div class="card" onclick="openModal()">
+          <div class="card-header">
+            <img
+              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Júlio Yussuf"
+            />
+            <h3>Júlio Yussuf</h3>
+          </div>
+
+          <div class="card-info">
+            <p>Placa do veículo</p>
+            <h4>ABC-0776</h4>
+          </div>
+        </div>
+        <div class="card" onclick="openModal()">
+          <div class="card-header">
+            <img
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Pedro Lima"
+            />
+            <h3>Pedro Lima</h3>
+          </div>
+
+          <div class="card-info">
+            <p>Placa do veículo</p>
+            <h4>DEF-9876</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Desenvolvido por Bruno Cabral</p>
+    </footer>
+
+    <div id="modal" class="hidden">
+      <div class="pelicula">
+        <div class="cardModal">
+          <div class="modal-header">
+            <div class="modal-title">
+              <img
+                src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Carlos Silva"
+              />
+              <div class="person-data">
+                <h3>Carlos Silva</h3>
+                <p>Motoboy</p>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <i class="ph ph-pen edit"></i>
+              <i class="ph ph-user-minus delete"></i>
+            </div>
+          </div>
+
+          <div class="modal-content">
+            <div class="modal-info">
+              <div class="item">
+                <p>Placa do veículo</p>
+                <h4>ABC-1234</h4>
+              </div>
+              <div class="item">
+                <p>Telefone</p>
+                <h4>(11) 98765-4321</h4>
+              </div>
+              <div class="item">
+                <p>E-mail</p>
+                <h4>carlos.silva@example.com</h4>
+              </div>
+            </div>
+          </div>
+          <button class="closeModalbutton" onclick="closeModal()">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("modal");
+
+      function closeModal() {
+        modal.classList.remove("show");
+        modal.classList.add("hidden");
+      }
+
+      function openModal() {
+        modal.classList.remove("hidden");
+        modal.classList.add("show");
+      }
+    </script>
+  </body>
+</html>
